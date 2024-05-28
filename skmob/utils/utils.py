@@ -230,7 +230,7 @@ def bbox_from_name(query, which_osm_result=0, crs=None):
 
     """
     nominatim_url = "https://nominatim.openstreetmap.org/search.php?" + \
-                    "q=%s&polygon_geojson=1&format=json" % query
+                    "q=%s&polygon_geojson=1&format=jsonv2" % query
 
     response = requests.get(nominatim_url)
     data = response.json()
